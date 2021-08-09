@@ -1,11 +1,15 @@
 package binary_search
 
-import "testing"
+import (
+	"fmt"
+	"testing"
+)
 
 //二分查找
 
 func TestBinarySearch(t *testing.T) {
-
+	re := guessNumber(7)
+	fmt.Println(re)
 }
 
 func guessNumber(n int) int {
@@ -29,4 +33,18 @@ func guessNumber(n int) int {
 		}
 	}
 	return r
+}
+
+const (
+	b = 10
+)
+
+func guess(a int) int {
+	if a == b {
+		return 0
+	} else if a > b {
+		return -1
+	} else {
+		return 1
+	}
 }
