@@ -4,10 +4,10 @@ package linked_list
 //输入： 1->2->3->4->5 和 k = 2
 //输出： 4
 //Definition for singly-linked list.
-type ListNode struct {
-	Val  int
-	Next *ListNode
-}
+//type ListNode struct {
+//	Val  int
+//	Next *ListNode
+//}
 
 func kthToLast(head *ListNode, k int) int {
 

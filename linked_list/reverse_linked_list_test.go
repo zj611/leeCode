@@ -5,29 +5,29 @@ import (
 	"testing"
 )
 
-type LinkedList struct {
-	 value  int
-	 nextPtr   *LinkedList
-}
+//type ListNode struct {
+//	Val  int
+//	Next *ListNode
+//}
 
-func ReverseLinkedList(head *LinkedList) *LinkedList  {
-	if head == nil || head.nextPtr == nil{
+func ReverseLinkedList(head *ListNode) *ListNode {
+	if head == nil || head.Next == nil {
 		return head
 	}
 
-	var pre,p,next *LinkedList
+	var pre, p, next *ListNode
 	pre = nil
 	p = head
-	next = head.nextPtr
-	for{
-		if p == nil{
+	next = head.Next
+	for {
+		if p == nil {
 			break
 		}
-		p.nextPtr = pre
+		p.Next = pre
 		pre = p
 		p = next
-		if next != nil{
-			next = next.nextPtr
+		if next != nil {
+			next = next.Next
 		}
 	}
 
@@ -35,47 +35,46 @@ func ReverseLinkedList(head *LinkedList) *LinkedList  {
 
 }
 
-func TestReverseLinkedList(t *testing.T)  {
+func TestReverseLinkedList(t *testing.T) {
 
-	l1 := LinkedList{
-		value: 1,
+	l1 := ListNode{
+		Val: 1,
 	}
-	l2 := LinkedList{
-		value: 2,
+	l2 := ListNode{
+		Val: 2,
 	}
-	l3 := LinkedList{
-		value: 3,
+	l3 := ListNode{
+		Val: 3,
 	}
-	l4 := LinkedList{
-		value: 4,
+	l4 := ListNode{
+		Val: 4,
 	}
 
-	l1.nextPtr = &l2
-	l2.nextPtr = &l3
-	l3.nextPtr = &l4
-	l4.nextPtr = nil
+	l1.Next = &l2
+	l2.Next = &l3
+	l3.Next = &l4
+	l4.Next = nil
 
 	p := &l1
 
-	for{
-		fmt.Print(p.value, "->")
-		p = p.nextPtr
-		if p.nextPtr == nil{
-			fmt.Print(p.value)
+	for {
+		fmt.Print(p.Val, "->")
+		p = p.Next
+		if p.Next == nil {
+			fmt.Print(p.Val)
 			break
 		}
 	}
 	fmt.Println()
 	p = ReverseLinkedList(&l1)
-	for{
-		fmt.Print(p.value, "->")
-		p = p.nextPtr
-		if p.nextPtr == nil{
-			fmt.Print(p.value)
+	for {
+		fmt.Print(p.Next, "->")
+		p = p.Next
+		if p.Next == nil {
+			fmt.Print(p.Val)
 			break
 		}
 	}
 	fmt.Println()
 
 }
-
