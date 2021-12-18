@@ -2,28 +2,22 @@ package string
 
 import "fmt"
 
+//滑动窗口 找最长不重复子字符串
 func lengthOfLongestSubstring(s string) int {
-
 	n := len(s)
 	if n <= 1 {
 		return n
 	}
-
 	window := make(map[byte]bool)
-
 	ll, rr := 0, 0
 	l, r := 0, 0
-
 	res := 0
-
 	for r < n {
 		c := s[r]
-
 		for window[c] {
 			delete(window, s[l])
 			l++
 		}
-
 		if res < (r - l + 1) {
 			res = r - l + 1
 			ll, rr = l, r
@@ -33,5 +27,4 @@ func lengthOfLongestSubstring(s string) int {
 	}
 	fmt.Println("res", s[ll:rr+1])
 	return res
-
 }

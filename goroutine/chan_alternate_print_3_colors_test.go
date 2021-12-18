@@ -41,4 +41,7 @@ func Test_chan_alternate_print_3_colors(t *testing.T) {
 	}
 
 	time.Sleep(1 * time.Second)
+
+	jjj := 27
+	fmt.Println(jjj >> 1)
 }
