@@ -65,16 +65,16 @@ func partition(start, end *ListNode) {
 	if start == end || start.Next == end {
 		return
 	}
-	pivot, target := start, start
+	base, target := start, start
 
 	for i := start.Next; i != end; i = i.Next {
-		if i.Val < pivot.Val {
+		if i.Val < base.Val {
 			target = target.Next
 			target.Val, i.Val = i.Val, target.Val
 		}
 	}
 
-	pivot.Val, target.Val = target.Val, pivot.Val
+	base.Val, target.Val = target.Val, base.Val
 	partition(start, target)
 	partition(target.Next, end)
 }

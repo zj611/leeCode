@@ -19,7 +19,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f583e4d3-f60c-4c72-81d4-f25c39d6d264" name="Default Changelist" comment="add splite listnode" />
+    <list default="true" id="f583e4d3-f60c-4c72-81d4-f25c39d6d264" name="Default Changelist" comment="update quicksort for linkList">
+      <change afterPath="$PROJECT_DIR$/goroutine/close_goroutine_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stack/min_stack_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/linked_list/sortedList_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/linked_list/sortedList_test.go" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -50,13 +55,23 @@
     <property name="go.import.settings.migrated" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunManager" selected="Go Test.Test_chan_alternate_print_odd_and_even_numbers in chan_alternate_print_odd_and_even_numbers_test.go">
+  <component name="RunManager" selected="Go Test.TestCloseGoroutine in close_goroutine_test.go">
     <configuration name="go build leeCode/" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
       <module name="leeCode" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="DIRECTORY" />
       <filePath value="$PROJECT_DIR$" />
       <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestCloseGoroutine in close_goroutine_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="leeCode" />
+      <working_directory value="$PROJECT_DIR$/goroutine" />
+      <framework value="gotest" />
+      <kind value="FILE" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/goroutine/close_goroutine_test.go" />
+      <pattern value="^\QTestCloseGoroutine\E$" />
       <method v="2" />
     </configuration>
     <configuration name="TestLongestCommonSubSequence in longest_common_subsequence_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
@@ -67,16 +82,6 @@
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$/dp/longest_common_subsequence_test.go" />
       <pattern value="^\QTestLongestCommonSubSequence\E$" />
-      <method v="2" />
-    </configuration>
-    <configuration name="TestMaxSumNums in max_sum_nums_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="leeCode" />
-      <working_directory value="$PROJECT_DIR$/dp" />
-      <framework value="gotest" />
-      <kind value="FILE" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/dp/max_sum_nums_test.go" />
-      <pattern value="^\QTestMaxSumNums\E$" />
       <method v="2" />
     </configuration>
     <configuration name="TestSplite in splite_list_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
@@ -111,19 +116,19 @@
     </configuration>
     <list>
       <item itemvalue="Go Build.go build leeCode/" />
-      <item itemvalue="Go Test.TestMaxSumNums in max_sum_nums_test.go" />
       <item itemvalue="Go Test.TestLongestCommonSubSequence in longest_common_subsequence_test.go" />
       <item itemvalue="Go Test.TestSplite in splite_list_test.go" />
       <item itemvalue="Go Test.Test_chan_alternate_print_3_colors in chan_alternate_print_3_colors_test.go" />
       <item itemvalue="Go Test.Test_chan_alternate_print_odd_and_even_numbers in chan_alternate_print_odd_and_even_numbers_test.go" />
+      <item itemvalue="Go Test.TestCloseGoroutine in close_goroutine_test.go" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.TestCloseGoroutine in close_goroutine_test.go" />
         <item itemvalue="Go Test.Test_chan_alternate_print_odd_and_even_numbers in chan_alternate_print_odd_and_even_numbers_test.go" />
         <item itemvalue="Go Test.Test_chan_alternate_print_3_colors in chan_alternate_print_3_colors_test.go" />
         <item itemvalue="Go Test.TestLongestCommonSubSequence in longest_common_subsequence_test.go" />
         <item itemvalue="Go Test.TestSplite in splite_list_test.go" />
-        <item itemvalue="Go Test.TestMaxSumNums in max_sum_nums_test.go" />
       </list>
     </recent_temporary>
   </component>
@@ -153,47 +158,52 @@
     <MESSAGE value="add top k" />
     <MESSAGE value="add longest sub str" />
     <MESSAGE value="add splite listnode" />
-    <option name="LAST_COMMIT_MESSAGE" value="add splite listnode" />
+    <MESSAGE value="update quicksort for linkList" />
+    <option name="LAST_COMMIT_MESSAGE" value="update quicksort for linkList" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1398" height="181" key="GridCell.Tab.0.bottom" timestamp="1639829820099">
-      <screen x="0" y="25" width="1440" height="799" />
+    <state width="1398" height="71" key="GridCell.Tab.0.bottom" timestamp="1640529829155">
+      <screen x="0" y="25" width="1440" height="801" />
     </state>
     <state width="1398" height="225" key="GridCell.Tab.0.bottom/0.25.1440.788@0.25.1440.788" timestamp="1634824595877" />
     <state width="1398" height="306" key="GridCell.Tab.0.bottom/0.25.1440.791@0.25.1440.791" timestamp="1638088071355" />
     <state width="1398" height="46" key="GridCell.Tab.0.bottom/0.25.1440.794@0.25.1440.794" timestamp="1638016162742" />
     <state width="1398" height="260" key="GridCell.Tab.0.bottom/0.25.1440.797@0.25.1440.797" timestamp="1637849016964" />
     <state width="1398" height="181" key="GridCell.Tab.0.bottom/0.25.1440.799@0.25.1440.799" timestamp="1639829820099" />
+    <state width="1398" height="71" key="GridCell.Tab.0.bottom/0.25.1440.801@0.25.1440.801" timestamp="1640529829155" />
     <state width="1398" height="248" key="GridCell.Tab.0.bottom/0.25.1440.804@0.25.1440.804" timestamp="1635086110087" />
     <state width="1398" height="110" key="GridCell.Tab.0.bottom/0.25.1440.809@0.25.1440.809" timestamp="1636714610688" />
-    <state width="1398" height="181" key="GridCell.Tab.0.center" timestamp="1639829820099">
-      <screen x="0" y="25" width="1440" height="799" />
+    <state width="1398" height="71" key="GridCell.Tab.0.center" timestamp="1640529829154">
+      <screen x="0" y="25" width="1440" height="801" />
     </state>
     <state width="1398" height="225" key="GridCell.Tab.0.center/0.25.1440.788@0.25.1440.788" timestamp="1634824595876" />
     <state width="1398" height="306" key="GridCell.Tab.0.center/0.25.1440.791@0.25.1440.791" timestamp="1638088071355" />
     <state width="1398" height="46" key="GridCell.Tab.0.center/0.25.1440.794@0.25.1440.794" timestamp="1638016162742" />
     <state width="1398" height="260" key="GridCell.Tab.0.center/0.25.1440.797@0.25.1440.797" timestamp="1637849016962" />
     <state width="1398" height="181" key="GridCell.Tab.0.center/0.25.1440.799@0.25.1440.799" timestamp="1639829820099" />
+    <state width="1398" height="71" key="GridCell.Tab.0.center/0.25.1440.801@0.25.1440.801" timestamp="1640529829154" />
     <state width="1398" height="248" key="GridCell.Tab.0.center/0.25.1440.804@0.25.1440.804" timestamp="1635086110085" />
     <state width="1398" height="110" key="GridCell.Tab.0.center/0.25.1440.809@0.25.1440.809" timestamp="1636714610687" />
-    <state width="1398" height="181" key="GridCell.Tab.0.left" timestamp="1639829820098">
-      <screen x="0" y="25" width="1440" height="799" />
+    <state width="1398" height="71" key="GridCell.Tab.0.left" timestamp="1640529829153">
+      <screen x="0" y="25" width="1440" height="801" />
     </state>
     <state width="1398" height="225" key="GridCell.Tab.0.left/0.25.1440.788@0.25.1440.788" timestamp="1634824595876" />
     <state width="1398" height="306" key="GridCell.Tab.0.left/0.25.1440.791@0.25.1440.791" timestamp="1638088071354" />
     <state width="1398" height="46" key="GridCell.Tab.0.left/0.25.1440.794@0.25.1440.794" timestamp="1638016162741" />
     <state width="1398" height="260" key="GridCell.Tab.0.left/0.25.1440.797@0.25.1440.797" timestamp="1637849016960" />
     <state width="1398" height="181" key="GridCell.Tab.0.left/0.25.1440.799@0.25.1440.799" timestamp="1639829820098" />
+    <state width="1398" height="71" key="GridCell.Tab.0.left/0.25.1440.801@0.25.1440.801" timestamp="1640529829153" />
     <state width="1398" height="248" key="GridCell.Tab.0.left/0.25.1440.804@0.25.1440.804" timestamp="1635086110049" />
     <state width="1398" height="110" key="GridCell.Tab.0.left/0.25.1440.809@0.25.1440.809" timestamp="1636714610687" />
-    <state width="1398" height="181" key="GridCell.Tab.0.right" timestamp="1639829820099">
-      <screen x="0" y="25" width="1440" height="799" />
+    <state width="1398" height="71" key="GridCell.Tab.0.right" timestamp="1640529829155">
+      <screen x="0" y="25" width="1440" height="801" />
     </state>
     <state width="1398" height="225" key="GridCell.Tab.0.right/0.25.1440.788@0.25.1440.788" timestamp="1634824595877" />
     <state width="1398" height="306" key="GridCell.Tab.0.right/0.25.1440.791@0.25.1440.791" timestamp="1638088071355" />
     <state width="1398" height="46" key="GridCell.Tab.0.right/0.25.1440.794@0.25.1440.794" timestamp="1638016162742" />
     <state width="1398" height="260" key="GridCell.Tab.0.right/0.25.1440.797@0.25.1440.797" timestamp="1637849016963" />
     <state width="1398" height="181" key="GridCell.Tab.0.right/0.25.1440.799@0.25.1440.799" timestamp="1639829820099" />
+    <state width="1398" height="71" key="GridCell.Tab.0.right/0.25.1440.801@0.25.1440.801" timestamp="1640529829155" />
     <state width="1398" height="248" key="GridCell.Tab.0.right/0.25.1440.804@0.25.1440.804" timestamp="1635086110086" />
     <state width="1398" height="110" key="GridCell.Tab.0.right/0.25.1440.809@0.25.1440.809" timestamp="1636714610687" />
     <state width="1398" height="248" key="GridCell.Tab.1.bottom" timestamp="1635086110093">
@@ -216,11 +226,11 @@
     </state>
     <state width="1398" height="248" key="GridCell.Tab.1.right/0.25.1440.788@0.25.1440.788" timestamp="1634824454982" />
     <state width="1398" height="248" key="GridCell.Tab.1.right/0.25.1440.804@0.25.1440.804" timestamp="1635086110093" />
-    <state x="320" y="164" key="Vcs.Push.Dialog.v2" timestamp="1639829921817">
-      <screen x="0" y="25" width="1440" height="799" />
+    <state x="320" y="164" key="Vcs.Push.Dialog.v2" timestamp="1639905359740">
+      <screen x="0" y="25" width="1440" height="797" />
     </state>
     <state x="320" y="163" key="Vcs.Push.Dialog.v2/0.25.1440.794@0.25.1440.794" timestamp="1636281173756" />
-    <state x="320" y="164" key="Vcs.Push.Dialog.v2/0.25.1440.797@0.25.1440.797" timestamp="1637422434423" />
+    <state x="320" y="164" key="Vcs.Push.Dialog.v2/0.25.1440.797@0.25.1440.797" timestamp="1639905359740" />
     <state x="320" y="164" key="Vcs.Push.Dialog.v2/0.25.1440.799@0.25.1440.799" timestamp="1639829921817" />
     <state x="320" y="164" key="Vcs.Push.Dialog.v2/0.25.1440.801@0.25.1440.801" timestamp="1634227596839" />
     <state x="320" y="165" key="Vcs.Push.Dialog.v2/0.25.1440.804@0.25.1440.804" timestamp="1634224123897" />
