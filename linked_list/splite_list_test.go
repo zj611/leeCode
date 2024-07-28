@@ -10,6 +10,7 @@ type ListNode2 struct {
 	Next *ListNode2
 }
 
+// 按奇偶数分割链表
 func splite(head *ListNode2) *ListNode2 {
 
 	if head == nil || head.Next == nil {

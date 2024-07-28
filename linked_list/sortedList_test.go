@@ -50,10 +50,9 @@ func merge(l1, l2 *ListNode) *ListNode {
 		l2.Next = merge(l2.Next, l1)
 		return l2
 	}
-
 }
 
-//快速排序
+// 快速排序
 func sortList(head *ListNode) *ListNode {
 	var start, end *ListNode
 	start, end = head, nil

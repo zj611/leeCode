@@ -7,24 +7,29 @@ import (
 	"time"
 )
 
-//两个协程交替打印奇偶数
+// 两个协程交替打印奇偶数
 func Test_chan_alternate_print_odd_and_even_numbers(t *testing.T) {
 	c := make(chan int, 1)
+	c2 := make(chan int)
+
+	c <- 1
 
 	go func() {
 		for i := 1; i <= 100; i++ {
-			c <- 1
 			if i%2 == 1 {
+				<-c
 				fmt.Println("来自协程1", i)
+				c2 <- 1
 			}
 		}
 	}()
 
 	go func() {
 		for i := 1; i <= 100; i++ {
-			<-c
 			if i%2 == 0 {
+				<-c2
 				fmt.Println("来自协程2", i)
+				c <- 1
 			}
 		}
 	}()

@@ -21,7 +21,7 @@ func threeSum(nums []int, target int) [][]int {
 	ans := make([][]int, 0)
 
 	for first := 0; first < n; first++ {
-		if first > 0 && nums[first] == nums[first-1] { //当数组索引大于0时，避免重复
+		if first > 0 && nums[first] == nums[first-1] { //当数组索引大于0时，避免重复此轮，跳过
 			continue
 		}
 

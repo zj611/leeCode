@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -19,10 +22,17 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f583e4d3-f60c-4c72-81d4-f25c39d6d264" name="Default Changelist" comment="add twoSum &amp; threeSum">
-      <change afterPath="$PROJECT_DIR$/redis/skip_list_test.go" afterDir="false" />
+    <list default="true" id="f583e4d3-f60c-4c72-81d4-f25c39d6d264" name="Default Changelist" comment="add skplist.go">
+      <change afterPath="$PROJECT_DIR$/goroutine/chan_context_close_3_task_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/leeCode.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/lee.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linked_list/merge_two_ordered_lists.go" beforeDir="false" afterPath="$PROJECT_DIR$/linked_list/merge_two_ordered_lists.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dp/max_sum_nums_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/dp/max_sum_nums_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/goroutine/chan_alternate_print_3_colors_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/goroutine/chan_alternate_print_3_colors_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/goroutine/chan_alternate_print_odd_and_even_numbers_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/goroutine/chan_alternate_print_odd_and_even_numbers_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/linked_list/sortedList_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/linked_list/sortedList_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/linked_list/splite_list_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/linked_list/splite_list_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nums/three_sum_nums_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/nums/three_sum_nums_test.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,9 +47,15 @@
       </list>
     </option>
   </component>
-  <component name="GOROOT" path="/usr/local/go" />
+  <component name="GOROOT" url="file:///usr/local/go" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GoLibraries">
+    <option name="indexEntireGoPath" value="true" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="1wOTYvLmJuckrRnEZJcp2XuzVQw" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -47,95 +63,103 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="DefaultGoTemplateProperty" value="Go File" />
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="configurable.Global.GOPATH.is.expanded" value="true" />
-    <property name="configurable.Module.GOPATH.is.expanded" value="false" />
-    <property name="configurable.Project.GOPATH.is.expanded" value="true" />
-    <property name="go.import.settings.migrated" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="go.sdk" />
-  </component>
-  <component name="RunManager" selected="Go Test.TestTwoSum in two_sum_nums_test.go">
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultGoTemplateProperty": "Go File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.go.format.on.save.advertiser.fired": "true",
+    "RunOnceActivity.go.formatter.settings.were.checked": "true",
+    "RunOnceActivity.go.migrated.go.modules.settings": "true",
+    "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
+    "RunOnceActivity.go.watchers.conflict.with.on.save.actions.check.performed": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "go.import.settings.migrated": "true",
+    "go.sdk.automatically.set": "true",
+    "last_opened_file_path": "/Users/junzhang/Documents/code/lee"
+  }
+}]]></component>
+  <component name="RunManager" selected="Go Test.TestChanContextClose in chan_context_close_3_task_test.go">
     <configuration name="go build leeCode/" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
-      <module name="leeCode" />
+      <module name="lee" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="DIRECTORY" />
+      <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
-      <directory value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestCloseGoroutine in close_goroutine_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="leeCode" />
+    <configuration name="TestChanContextClose in chan_context_close_3_task_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="lee" />
       <working_directory value="$PROJECT_DIR$/goroutine" />
-      <framework value="gotest" />
       <kind value="FILE" />
       <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/goroutine/close_goroutine_test.go" />
-      <pattern value="^\QTestCloseGoroutine\E$" />
+      <filePath value="$PROJECT_DIR$/goroutine/chan_context_close_3_task_test.go" />
+      <framework value="gotest" />
+      <pattern value="^\QTestChanContextClose\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestThreeSum in three_sum_nums_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="leeCode" />
-      <working_directory value="$PROJECT_DIR$/nums" />
-      <framework value="gotest" />
+    <configuration name="TestLongestCommonSubSequence in longest_common_subsequence_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="lee" />
+      <working_directory value="$PROJECT_DIR$/dp" />
       <kind value="FILE" />
       <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/nums/three_sum_nums_test.go" />
-      <pattern value="^\QTestThreeSum\E$" />
+      <filePath value="$PROJECT_DIR$/dp/longest_common_subsequence_test.go" />
+      <framework value="gotest" />
+      <pattern value="^\QTestLongestCommonSubSequence\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestTwoSum in two_sum_nums_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="leeCode" />
-      <working_directory value="$PROJECT_DIR$/nums" />
-      <framework value="gotest" />
+    <configuration name="TestMaxSumNums in max_sum_nums_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="lee" />
+      <working_directory value="$PROJECT_DIR$/dp" />
       <kind value="FILE" />
       <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/nums/two_sum_nums_test.go" />
-      <pattern value="^\QTestTwoSum\E$" />
+      <filePath value="$PROJECT_DIR$/dp/max_sum_nums_test.go" />
+      <framework value="gotest" />
+      <pattern value="^\QTestMaxSumNums\E$" />
       <method v="2" />
     </configuration>
     <configuration name="Test_chan_alternate_print_3_colors in chan_alternate_print_3_colors_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="leeCode" />
+      <module name="lee" />
       <working_directory value="$PROJECT_DIR$/goroutine" />
-      <framework value="gotest" />
       <kind value="FILE" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$/goroutine/chan_alternate_print_3_colors_test.go" />
+      <framework value="gotest" />
       <pattern value="^\QTest_chan_alternate_print_3_colors\E$" />
       <method v="2" />
     </configuration>
     <configuration name="Test_chan_alternate_print_odd_and_even_numbers in chan_alternate_print_odd_and_even_numbers_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="leeCode" />
+      <module name="lee" />
       <working_directory value="$PROJECT_DIR$/goroutine" />
-      <framework value="gotest" />
       <kind value="FILE" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$/goroutine/chan_alternate_print_odd_and_even_numbers_test.go" />
+      <framework value="gotest" />
       <pattern value="^\QTest_chan_alternate_print_odd_and_even_numbers\E$" />
       <method v="2" />
     </configuration>
     <list>
       <item itemvalue="Go Build.go build leeCode/" />
+      <item itemvalue="Go Test.TestChanContextClose in chan_context_close_3_task_test.go" />
       <item itemvalue="Go Test.Test_chan_alternate_print_3_colors in chan_alternate_print_3_colors_test.go" />
       <item itemvalue="Go Test.Test_chan_alternate_print_odd_and_even_numbers in chan_alternate_print_odd_and_even_numbers_test.go" />
-      <item itemvalue="Go Test.TestCloseGoroutine in close_goroutine_test.go" />
-      <item itemvalue="Go Test.TestThreeSum in three_sum_nums_test.go" />
-      <item itemvalue="Go Test.TestTwoSum in two_sum_nums_test.go" />
+      <item itemvalue="Go Test.TestMaxSumNums in max_sum_nums_test.go" />
+      <item itemvalue="Go Test.TestLongestCommonSubSequence in longest_common_subsequence_test.go" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Test.TestTwoSum in two_sum_nums_test.go" />
-        <item itemvalue="Go Test.TestThreeSum in three_sum_nums_test.go" />
-        <item itemvalue="Go Test.TestCloseGoroutine in close_goroutine_test.go" />
+        <item itemvalue="Go Test.TestChanContextClose in chan_context_close_3_task_test.go" />
+        <item itemvalue="Go Test.TestMaxSumNums in max_sum_nums_test.go" />
+        <item itemvalue="Go Test.TestLongestCommonSubSequence in longest_common_subsequence_test.go" />
         <item itemvalue="Go Test.Test_chan_alternate_print_odd_and_even_numbers in chan_alternate_print_odd_and_even_numbers_test.go" />
         <item itemvalue="Go Test.Test_chan_alternate_print_3_colors in chan_alternate_print_3_colors_test.go" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
@@ -146,7 +170,6 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add binary search" />
@@ -164,90 +187,10 @@
     <MESSAGE value="update quicksort for linkList" />
     <MESSAGE value="add close goroutine" />
     <MESSAGE value="add twoSum &amp; threeSum" />
-    <option name="LAST_COMMIT_MESSAGE" value="add twoSum &amp; threeSum" />
+    <MESSAGE value="add skplist.go" />
+    <option name="LAST_COMMIT_MESSAGE" value="add skplist.go" />
   </component>
   <component name="VgoProject">
-    <integration-enabled>true</integration-enabled>
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="520" y="358" key="#GOROOT" timestamp="1643466467315">
-      <screen x="0" y="25" width="1440" height="799" />
-    </state>
-    <state x="520" y="358" key="#GOROOT/0.25.1440.799@0.25.1440.799" timestamp="1643466467315" />
-    <state x="520" y="361" key="#GOROOT/0.25.1440.805@0.25.1440.805" timestamp="1643465211123" />
-    <state x="184" y="25" width="1071" height="805" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1643464966392">
-      <screen x="0" y="25" width="1440" height="805" />
-    </state>
-    <state x="184" y="25" width="1071" height="805" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.25.1440.805@0.25.1440.805" timestamp="1643464966392" />
-    <state width="1398" height="253" key="GridCell.Tab.0.bottom" timestamp="1642605244591">
-      <screen x="0" y="25" width="1440" height="791" />
-    </state>
-    <state width="1398" height="253" key="GridCell.Tab.0.bottom/0.25.1440.791@0.25.1440.791" timestamp="1642605244591" />
-    <state width="1398" height="46" key="GridCell.Tab.0.bottom/0.25.1440.794@0.25.1440.794" timestamp="1638016162742" />
-    <state width="1398" height="253" key="GridCell.Tab.0.bottom/0.25.1440.797@0.25.1440.797" timestamp="1642601167898" />
-    <state width="1398" height="181" key="GridCell.Tab.0.bottom/0.25.1440.799@0.25.1440.799" timestamp="1639829820099" />
-    <state width="1398" height="71" key="GridCell.Tab.0.bottom/0.25.1440.801@0.25.1440.801" timestamp="1640529829155" />
-    <state width="1398" height="253" key="GridCell.Tab.0.bottom/0.25.1440.804@0.25.1440.804" timestamp="1641990740298" />
-    <state width="1398" height="110" key="GridCell.Tab.0.bottom/0.25.1440.809@0.25.1440.809" timestamp="1636714610688" />
-    <state width="1398" height="253" key="GridCell.Tab.0.center" timestamp="1642605244591">
-      <screen x="0" y="25" width="1440" height="791" />
-    </state>
-    <state width="1398" height="253" key="GridCell.Tab.0.center/0.25.1440.791@0.25.1440.791" timestamp="1642605244591" />
-    <state width="1398" height="46" key="GridCell.Tab.0.center/0.25.1440.794@0.25.1440.794" timestamp="1638016162742" />
-    <state width="1398" height="253" key="GridCell.Tab.0.center/0.25.1440.797@0.25.1440.797" timestamp="1642601167897" />
-    <state width="1398" height="181" key="GridCell.Tab.0.center/0.25.1440.799@0.25.1440.799" timestamp="1639829820099" />
-    <state width="1398" height="71" key="GridCell.Tab.0.center/0.25.1440.801@0.25.1440.801" timestamp="1640529829154" />
-    <state width="1398" height="253" key="GridCell.Tab.0.center/0.25.1440.804@0.25.1440.804" timestamp="1641990740297" />
-    <state width="1398" height="110" key="GridCell.Tab.0.center/0.25.1440.809@0.25.1440.809" timestamp="1636714610687" />
-    <state width="1398" height="253" key="GridCell.Tab.0.left" timestamp="1642605244590">
-      <screen x="0" y="25" width="1440" height="791" />
-    </state>
-    <state width="1398" height="253" key="GridCell.Tab.0.left/0.25.1440.791@0.25.1440.791" timestamp="1642605244590" />
-    <state width="1398" height="46" key="GridCell.Tab.0.left/0.25.1440.794@0.25.1440.794" timestamp="1638016162741" />
-    <state width="1398" height="253" key="GridCell.Tab.0.left/0.25.1440.797@0.25.1440.797" timestamp="1642601167896" />
-    <state width="1398" height="181" key="GridCell.Tab.0.left/0.25.1440.799@0.25.1440.799" timestamp="1639829820098" />
-    <state width="1398" height="71" key="GridCell.Tab.0.left/0.25.1440.801@0.25.1440.801" timestamp="1640529829153" />
-    <state width="1398" height="253" key="GridCell.Tab.0.left/0.25.1440.804@0.25.1440.804" timestamp="1641990740296" />
-    <state width="1398" height="110" key="GridCell.Tab.0.left/0.25.1440.809@0.25.1440.809" timestamp="1636714610687" />
-    <state width="1398" height="253" key="GridCell.Tab.0.right" timestamp="1642605244591">
-      <screen x="0" y="25" width="1440" height="791" />
-    </state>
-    <state width="1398" height="253" key="GridCell.Tab.0.right/0.25.1440.791@0.25.1440.791" timestamp="1642605244591" />
-    <state width="1398" height="46" key="GridCell.Tab.0.right/0.25.1440.794@0.25.1440.794" timestamp="1638016162742" />
-    <state width="1398" height="253" key="GridCell.Tab.0.right/0.25.1440.797@0.25.1440.797" timestamp="1642601167898" />
-    <state width="1398" height="181" key="GridCell.Tab.0.right/0.25.1440.799@0.25.1440.799" timestamp="1639829820099" />
-    <state width="1398" height="71" key="GridCell.Tab.0.right/0.25.1440.801@0.25.1440.801" timestamp="1640529829155" />
-    <state width="1398" height="253" key="GridCell.Tab.0.right/0.25.1440.804@0.25.1440.804" timestamp="1641990740298" />
-    <state width="1398" height="110" key="GridCell.Tab.0.right/0.25.1440.809@0.25.1440.809" timestamp="1636714610687" />
-    <state width="1398" height="248" key="GridCell.Tab.1.bottom" timestamp="1635086110093">
-      <screen x="0" y="25" width="1440" height="804" />
-    </state>
-    <state width="1398" height="248" key="GridCell.Tab.1.bottom/0.25.1440.804@0.25.1440.804" timestamp="1635086110093" />
-    <state width="1398" height="248" key="GridCell.Tab.1.center" timestamp="1635086110091">
-      <screen x="0" y="25" width="1440" height="804" />
-    </state>
-    <state width="1398" height="248" key="GridCell.Tab.1.center/0.25.1440.804@0.25.1440.804" timestamp="1635086110091" />
-    <state width="1398" height="248" key="GridCell.Tab.1.left" timestamp="1635086110088">
-      <screen x="0" y="25" width="1440" height="804" />
-    </state>
-    <state width="1398" height="248" key="GridCell.Tab.1.left/0.25.1440.804@0.25.1440.804" timestamp="1635086110088" />
-    <state width="1398" height="248" key="GridCell.Tab.1.right" timestamp="1635086110093">
-      <screen x="0" y="25" width="1440" height="804" />
-    </state>
-    <state width="1398" height="248" key="GridCell.Tab.1.right/0.25.1440.804@0.25.1440.804" timestamp="1635086110093" />
-    <state x="338" y="44" key="SettingsEditor" timestamp="1643465047997">
-      <screen x="0" y="25" width="1440" height="805" />
-    </state>
-    <state x="338" y="44" key="SettingsEditor/0.25.1440.805@0.25.1440.805" timestamp="1643465047997" />
-    <state x="145" y="124" key="Vcs.Push.Dialog.v2" timestamp="1642601301015">
-      <screen x="0" y="25" width="1440" height="794" />
-    </state>
-    <state x="145" y="124" key="Vcs.Push.Dialog.v2/0.25.1440.794@0.25.1440.794" timestamp="1642601301015" />
-    <state x="174" y="156" key="Vcs.Push.Dialog.v2/0.25.1440.797@0.25.1440.797" timestamp="1642601226862" />
-    <state x="320" y="164" key="Vcs.Push.Dialog.v2/0.25.1440.799@0.25.1440.799" timestamp="1639829921817" />
-    <state x="385" y="143" width="670" height="676" key="search.everywhere.popup" timestamp="1634827742845">
-      <screen x="0" y="25" width="1440" height="794" />
-    </state>
-    <state x="385" y="143" width="670" height="676" key="search.everywhere.popup/0.25.1440.794@0.25.1440.794" timestamp="1634827742845" />
+    <settings-migrated>true</settings-migrated>
   </component>
 </project>
