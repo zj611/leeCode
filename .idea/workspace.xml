@@ -22,17 +22,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f583e4d3-f60c-4c72-81d4-f25c39d6d264" name="Default Changelist" comment="add skplist.go">
-      <change afterPath="$PROJECT_DIR$/goroutine/chan_context_close_3_task_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/leeCode.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/lee.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="f583e4d3-f60c-4c72-81d4-f25c39d6d264" name="Default Changelist" comment="add close goroutine with context">
+      <change afterPath="$PROJECT_DIR$/goroutine/chan_judge_round_str_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dp/max_sum_nums_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/dp/max_sum_nums_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/goroutine/chan_alternate_print_3_colors_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/goroutine/chan_alternate_print_3_colors_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/goroutine/chan_alternate_print_odd_and_even_numbers_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/goroutine/chan_alternate_print_odd_and_even_numbers_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linked_list/sortedList_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/linked_list/sortedList_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linked_list/splite_list_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/linked_list/splite_list_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nums/three_sum_nums_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/nums/three_sum_nums_test.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,23 +56,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultGoTemplateProperty": "Go File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.go.format.on.save.advertiser.fired": "true",
-    "RunOnceActivity.go.formatter.settings.were.checked": "true",
-    "RunOnceActivity.go.migrated.go.modules.settings": "true",
-    "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
-    "RunOnceActivity.go.watchers.conflict.with.on.save.actions.check.performed": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "go.import.settings.migrated": "true",
-    "go.sdk.automatically.set": "true",
-    "last_opened_file_path": "/Users/junzhang/Documents/code/lee"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultGoTemplateProperty&quot;: &quot;Go File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.format.on.save.advertiser.fired&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.modules.go.list.on.any.changes.was.set&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.watchers.conflict.with.on.save.actions.check.performed&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
+    &quot;go.sdk.automatically.set&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/junzhang/Documents/code/lee&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="Go Test.TestChanContextClose in chan_context_close_3_task_test.go">
+}</component>
+  <component name="RunManager" selected="Go Test.Test_chan_alternate_print_3_colors in chan_alternate_print_3_colors_test.go">
     <configuration name="go build leeCode/" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
       <module name="lee" />
       <working_directory value="$PROJECT_DIR$" />
@@ -98,24 +91,24 @@
       <pattern value="^\QTestChanContextClose\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestLongestCommonSubSequence in longest_common_subsequence_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestChanContextClose1 in chan_context_close_3_task_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="lee" />
-      <working_directory value="$PROJECT_DIR$/dp" />
+      <working_directory value="$PROJECT_DIR$/goroutine" />
       <kind value="FILE" />
       <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/dp/longest_common_subsequence_test.go" />
+      <filePath value="$PROJECT_DIR$/goroutine/chan_context_close_3_task_test.go" />
       <framework value="gotest" />
-      <pattern value="^\QTestLongestCommonSubSequence\E$" />
+      <pattern value="^\QTestChanContextClose1\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestMaxSumNums in max_sum_nums_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestIsPalindromee in chan_judge_round_str_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="lee" />
-      <working_directory value="$PROJECT_DIR$/dp" />
+      <working_directory value="$PROJECT_DIR$/goroutine" />
       <kind value="FILE" />
       <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/dp/max_sum_nums_test.go" />
+      <filePath value="$PROJECT_DIR$/goroutine/chan_judge_round_str_test.go" />
       <framework value="gotest" />
-      <pattern value="^\QTestMaxSumNums\E$" />
+      <pattern value="^\QTestIsPalindromee\E$" />
       <method v="2" />
     </configuration>
     <configuration name="Test_chan_alternate_print_3_colors in chan_alternate_print_3_colors_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
@@ -128,31 +121,31 @@
       <pattern value="^\QTest_chan_alternate_print_3_colors\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="Test_chan_alternate_print_odd_and_even_numbers in chan_alternate_print_odd_and_even_numbers_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="Test_chan_alternate_print_3_colors1 in chan_alternate_print_3_colors_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="lee" />
       <working_directory value="$PROJECT_DIR$/goroutine" />
       <kind value="FILE" />
       <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/goroutine/chan_alternate_print_odd_and_even_numbers_test.go" />
+      <filePath value="$PROJECT_DIR$/goroutine/chan_alternate_print_3_colors_test.go" />
       <framework value="gotest" />
-      <pattern value="^\QTest_chan_alternate_print_odd_and_even_numbers\E$" />
+      <pattern value="^\QTest_chan_alternate_print_3_colors1\E$" />
       <method v="2" />
     </configuration>
     <list>
       <item itemvalue="Go Build.go build leeCode/" />
-      <item itemvalue="Go Test.TestChanContextClose in chan_context_close_3_task_test.go" />
+      <item itemvalue="Go Test.TestChanContextClose1 in chan_context_close_3_task_test.go" />
       <item itemvalue="Go Test.Test_chan_alternate_print_3_colors in chan_alternate_print_3_colors_test.go" />
-      <item itemvalue="Go Test.Test_chan_alternate_print_odd_and_even_numbers in chan_alternate_print_odd_and_even_numbers_test.go" />
-      <item itemvalue="Go Test.TestMaxSumNums in max_sum_nums_test.go" />
-      <item itemvalue="Go Test.TestLongestCommonSubSequence in longest_common_subsequence_test.go" />
+      <item itemvalue="Go Test.Test_chan_alternate_print_3_colors1 in chan_alternate_print_3_colors_test.go" />
+      <item itemvalue="Go Test.TestIsPalindromee in chan_judge_round_str_test.go" />
+      <item itemvalue="Go Test.TestChanContextClose in chan_context_close_3_task_test.go" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Test.TestChanContextClose in chan_context_close_3_task_test.go" />
-        <item itemvalue="Go Test.TestMaxSumNums in max_sum_nums_test.go" />
-        <item itemvalue="Go Test.TestLongestCommonSubSequence in longest_common_subsequence_test.go" />
-        <item itemvalue="Go Test.Test_chan_alternate_print_odd_and_even_numbers in chan_alternate_print_odd_and_even_numbers_test.go" />
         <item itemvalue="Go Test.Test_chan_alternate_print_3_colors in chan_alternate_print_3_colors_test.go" />
+        <item itemvalue="Go Test.Test_chan_alternate_print_3_colors1 in chan_alternate_print_3_colors_test.go" />
+        <item itemvalue="Go Test.TestChanContextClose1 in chan_context_close_3_task_test.go" />
+        <item itemvalue="Go Test.TestChanContextClose in chan_context_close_3_task_test.go" />
+        <item itemvalue="Go Test.TestIsPalindromee in chan_judge_round_str_test.go" />
       </list>
     </recent_temporary>
   </component>
@@ -188,7 +181,8 @@
     <MESSAGE value="add close goroutine" />
     <MESSAGE value="add twoSum &amp; threeSum" />
     <MESSAGE value="add skplist.go" />
-    <option name="LAST_COMMIT_MESSAGE" value="add skplist.go" />
+    <MESSAGE value="add close goroutine with context" />
+    <option name="LAST_COMMIT_MESSAGE" value="add close goroutine with context" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
