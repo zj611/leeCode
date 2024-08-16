@@ -10,95 +10,33 @@ func quickSort(nums []int) []int {
 	return nums
 }
 
-//func _quickSort(nums []int, left, right int) {
-//
-//	if left > right {
-//		return
-//	}
-//
-//	i, j, base := left, right, nums[right]
-//
-//	for i < j {
-//		for nums[i] <= base && i < j {
-//			i++
-//		}
-//		for nums[j] >= base && i < j {
-//			j--
-//		}
-//
-//
-//		nums[i], nums[j] = nums[j], nums[i]
-//	}
-//	nums[j], nums[right] = nums[right], nums[j]
-//
-//	_quickSort(nums, left, i-1)
-//	_quickSort(nums, i+1, right)
-//}
-
 func _quickSort1(nums []int, left, right int) {
 	if left > right {
 		return
 	}
-
-	//i, j, base := left, right, nums[left]
 	i, j, base := left, right, nums[right]
 
 	for i < j {
+		// 以base为分割线，nums[i] 都比它小
 		for nums[i] <= base && i < j {
 			i++
 		}
+		// 以base为分割线，nums[j] 都比它大
 		for nums[j] >= base && i < j {
 			j--
 		}
-		//for nums[j] >= base && i < j {
-		//	j--
-		//}
-		//for nums[i] <= base && i < j {
-		//	i++
-		//}
 		nums[i], nums[j] = nums[j], nums[i]
 	}
-	//nums[left], nums[i] = nums[i], nums[left]
+	// 保证nums[j]的左边都比它小，右边都比它大，然后再把nums[j]换到最右边
 	nums[j], nums[right] = nums[right], nums[j]
 
 	_quickSort1(nums, left, i-1)
 	_quickSort1(nums, i+1, right)
-
 }
 
-//func quickSort(nums []int) []int {
-//
-//	_quickSort(nums, 0, len(nums)-1)
-//	return nums
-//}
-//
-//func _quickSort(nums []int, left, right int)  {
-//	if left > right{
-//		return
-//	}
-//	i,j,base := left,right,nums[left]
-//
-//	for i < j{
-//		for nums[j] >= base && i < j{
-//			j--
-//		}
-//		for nums[i] <= base && i < j{
-//			i++
-//		}
-//		nums[i],nums[j] = nums[j],nums[i]
-//	}
-//	nums[i], nums[left] = nums[left],nums[i]
-//
-//	_quickSort(nums,left, i-1)
-//	_quickSort(nums,i+1,right)
-//
-//}
-
 func TestQuickSort(t *testing.T) {
-	var a = []int{3, 4, 0, 1, 8, 0, 6, 5, 6, 7, 8}
+	var a = []int{11, 7, 3, 4, 0, 1, 8, 0, 6, 5, 6, 7, 8}
 	fmt.Println(a)
 	b := quickSort(a)
 	fmt.Println(b)
-	//var b = []int{222,333,444,555}
-
 }

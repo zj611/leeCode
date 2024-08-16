@@ -78,3 +78,37 @@ func TestChanWithCancel(t *testing.T) {
 
 	time.Sleep(3 * time.Second)
 }
+
+func Test_chan_alternate_print(t *testing.T) {
+	ch1 := make(chan bool)
+	ch2 := make(chan bool)
+
+	go func() {
+		for i := 0; i <= 100; i++ {
+			if i%2 == 1 {
+				<-ch1
+				fmt.Println("this is from 1", i)
+				ch2 <- true
+			}
+		}
+		fmt.Println("this is from 1 ending")
+	}()
+
+	go func() {
+		for i := 0; i <= 100; i++ {
+			if i%2 == 0 {
+				<-ch2
+				fmt.Println("this is from 2", i)
+				ch1 <- true
+			}
+		}
+		fmt.Println("this is from 2 ending")
+	}()
+
+	ch1 <- true
+
+	time.Sleep(time.Second * 90)
+	close(ch1)
+	close(ch2)
+
+}
