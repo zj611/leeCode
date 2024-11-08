@@ -5,6 +5,7 @@ import (
 	"testing"
 )
 
+// 最长公共子字符串
 func longestCommonSubString(str1, str2 string) string {
 	chs1 := len(str1)
 	chs2 := len(str2)

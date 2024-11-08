@@ -43,9 +43,41 @@ func twoSum(nums []int, target int) [][]int {
 	return ans
 }
 
+func twoSum1(nums []int, target int) [][]int {
+	n := len(nums)
+	res := make([][]int, 0)
+
+	sort.Ints(nums)
+	if n < 2 {
+		return res
+	}
+
+	second := n - 1
+
+	for first := 0; first < n; first++ {
+		if first > 1 && nums[first] == nums[first-1] {
+			continue
+		}
+
+		for first < second && nums[first]+nums[second] > target {
+			second--
+		}
+		if first == second {
+			break
+		}
+
+		if nums[first]+nums[second] == target {
+			res = append(res, []int{nums[first], nums[second]})
+		}
+
+	}
+	return res
+
+}
+
 func TestTwoSum(t *testing.T) {
 	nums := []int{-1, 0, 1, 1, 0, 2}
 
-	ans := twoSum(nums, 1)
+	ans := twoSum(nums, 2)
 	fmt.Println(ans)
 }

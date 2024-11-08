@@ -49,10 +49,46 @@ func threeSum(nums []int, target int) [][]int {
 	return ans
 }
 
+func threeSum1(nums []int, target int) [][]int {
+	n := len(nums)
+	ans := make([][]int, 0)
+	if n < 3 {
+		return ans
+	}
+
+	sort.Ints(nums)
+	for first := 0; first < n; first++ {
+		if first > 0 && nums[first] == nums[first-1] {
+			continue
+		}
+
+		third := n - 1
+		t := target - nums[first]
+
+		for second := first + 1; second < third; second++ {
+			if second > first+1 && nums[second] == nums[second-1] { //当数组索引大于0时，避免重复
+				continue
+			}
+
+			for second < third && nums[second]+nums[third] > t { // 找到一个third就行
+				third--
+			}
+
+			if nums[second]+nums[third] == t {
+				ans = append(ans, []int{nums[first], nums[second], nums[third]})
+			}
+
+		}
+
+	}
+	return ans
+
+}
+
 func TestThreeSum(t *testing.T) {
 	nums := []int{-1, 0, 1, 1, 0, 2}
 
-	ans := threeSum(nums, 2)
+	ans := threeSum1(nums, 2)
 	fmt.Println(ans)
 
 }

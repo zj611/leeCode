@@ -1,5 +1,10 @@
 package linked_list
 
+import (
+	"fmt"
+	"testing"
+)
+
 //实现一种算法，找出单向链表中倒数第 k 个节点。返回该节点的值。
 //输入： 1->2->3->4->5 和 k = 2
 //输出： 4
@@ -8,6 +13,8 @@ package linked_list
 //	Val  int
 //	Next *ListNode
 //}
+
+// 快慢指针方法
 
 func kthToLast(head *ListNode, k int) int {
 
@@ -39,4 +46,33 @@ func kthToLast(head *ListNode, k int) int {
 		slow = slow.Next
 	}
 	return slow.Next.Val
+}
+
+func TestKthToLast(t *testing.T) {
+
+	l1 := ListNode{
+		Val: 11,
+	}
+	l2 := ListNode{
+		Val: 22,
+	}
+	l3 := ListNode{
+		Val: 3,
+	}
+	l4 := ListNode{
+		Val: 14,
+	}
+
+	l1.Next = &l2
+	l2.Next = &l3
+	l3.Next = &l4
+	l4.Next = nil
+
+	p := &l1
+	PrintLinkedList(p)
+
+	res := kthToLast(&l1, 2)
+
+	fmt.Println(res)
+
 }

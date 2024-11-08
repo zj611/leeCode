@@ -73,9 +73,7 @@ func TestChanWithCancel(t *testing.T) {
 	}(ctx)
 
 	time.Sleep(2 * time.Second)
-
 	cancel()
-
 	time.Sleep(3 * time.Second)
 }
 

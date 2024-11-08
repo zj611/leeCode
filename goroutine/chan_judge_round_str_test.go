@@ -10,9 +10,10 @@ func is_palindrome(str string) bool {
 	//defer close(ch)
 
 	length := len(str)
-
+	t := 0
 	go func() {
 		for i := 0; i < length; i++ {
+			t = i
 			ch <- str[i]
 		}
 	}()
@@ -25,6 +26,14 @@ func is_palindrome(str string) bool {
 			break
 		}
 	}
+
+	// 释放掉通道内数据
+	if !res {
+		for d := t; d < len(str); d++ {
+			<-ch
+		}
+	}
+	close(ch)
 
 	return res
 }

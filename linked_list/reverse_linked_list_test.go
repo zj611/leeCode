@@ -5,41 +5,28 @@ import (
 	"testing"
 )
 
-type ListNode1 struct {
-	Val  int
-	Next *ListNode1
+func PrintLinkedList(p *ListNode) {
+	for {
+		fmt.Print(p.Val, "->")
+		p = p.Next
+		if p.Next == nil {
+			fmt.Print(p.Val)
+			break
+		}
+	}
+	fmt.Println()
 }
 
-//func ReverseLinkedList(head *ListNode1) *ListNode1 {
-//	if head == nil || head.Next == nil {
-//		return head
-//	}
-//
-//	var pre, p, next *ListNode1
-//	pre = nil
-//	p = head
-//	next = head.Next
-//	for {
-//		if p == nil {
-//			break
-//		}
-//		p.Next = pre
-//		pre = p
-//		p = next
-//		if next != nil {
-//			next = next.Next
-//		}
-//	}
-//
-//	return pre
-//
-//}
+type LinkedNode1 struct {
+	val  int
+	next *LinkedNode1
+}
 
-func ReverseLinkedList(head *ListNode1) *ListNode1 {
+func ReverseLinkedList(head *ListNode) *ListNode {
 	if head == nil || head.Next == nil {
 		return head
 	}
-	var pre, p, next *ListNode1
+	var pre, p, next *ListNode
 	pre = nil
 	p = head
 	next = head.Next
@@ -58,18 +45,37 @@ func ReverseLinkedList(head *ListNode1) *ListNode1 {
 	return pre
 }
 
+func ReverseLinkedList1(head *ListNode) *ListNode {
+	if head == nil || head.Next == nil {
+		return head
+	}
+	var pre, p, next *ListNode
+	pre = nil
+	p = head
+	next = head.Next
+	for p != nil {
+		p.Next = pre
+		pre = p
+		p = next
+		if next != nil {
+			next = next.Next
+		}
+	}
+	return pre
+}
+
 func TestReverseLinkedList(t *testing.T) {
 
-	l1 := ListNode1{
+	l1 := ListNode{
 		Val: 1,
 	}
-	l2 := ListNode1{
+	l2 := ListNode{
 		Val: 2,
 	}
-	l3 := ListNode1{
+	l3 := ListNode{
 		Val: 3,
 	}
-	l4 := ListNode1{
+	l4 := ListNode{
 		Val: 4,
 	}
 
@@ -79,24 +85,7 @@ func TestReverseLinkedList(t *testing.T) {
 	l4.Next = nil
 
 	p := &l1
-
-	for {
-		fmt.Print(p.Val, "->")
-		p = p.Next
-		if p.Next == nil {
-			fmt.Print(p.Val)
-			break
-		}
-	}
-	fmt.Println()
-	p = ReverseLinkedList(&l1)
-	for {
-		fmt.Print(p.Val, "->")
-		p = p.Next
-		if p.Next == nil {
-			fmt.Print(p.Val)
-			break
-		}
-	}
-
+	PrintLinkedList(p)
+	p = ReverseLinkedList1(&l1)
+	PrintLinkedList(p)
 }

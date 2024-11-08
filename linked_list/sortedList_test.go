@@ -5,18 +5,14 @@ import (
 	"testing"
 )
 
-type ListNode struct {
-	Val  int
-	Next *ListNode
-}
-
-func sortList(head *ListNode) *ListNode {
+// 快慢指针排序，思路：每次找中点位置，然后递归，合并两条链表
+func sortListByFastSlowPoint(head *ListNode) *ListNode {
 	if head == nil || head.Next == nil {
 		return head
 	}
 	mid := findMid(head)
-	l1 := sortList(head)
-	l2 := sortList(mid)
+	l1 := sortListByFastSlowPoint(head)
+	l2 := sortListByFastSlowPoint(mid)
 
 	return merge(l1, l2)
 }
@@ -53,7 +49,7 @@ func merge(l1, l2 *ListNode) *ListNode {
 }
 
 // 快速排序
-func sortList(head *ListNode) *ListNode {
+func sortListByQuickSort(head *ListNode) *ListNode {
 	var start, end *ListNode
 	start, end = head, nil
 	partition(start, end)
@@ -78,6 +74,30 @@ func partition(start, end *ListNode) {
 	partition(target.Next, end)
 }
 
+func partition1(start, end *ListNode) {
+	if start == end || start.Next == end {
+		return
+	}
+	base, target := start, start
+
+	for i := start; i != end; i = i.Next {
+		if i.Val < base.Val {
+			target = target.Next
+			i.Val, target.Val = target.Val, i.Val
+		}
+	}
+	base.Val, target.Val = target.Val, base.Val
+	partition1(start, target)
+	partition1(target.Next, end)
+}
+
+func sortListByQuickSort1(head *ListNode) *ListNode {
+	var start, end *ListNode
+	start, end = head, nil
+	partition1(start, end)
+	return start
+}
+
 func TestSortedLinkedList(t *testing.T) {
 
 	l1 := ListNode{
@@ -99,25 +119,13 @@ func TestSortedLinkedList(t *testing.T) {
 	l4.Next = nil
 
 	p := &l1
+	PrintLinkedList(p)
 
-	for {
-		fmt.Print(p.Val, "->")
-		p = p.Next
-		if p.Next == nil {
-			fmt.Print(p.Val)
-			break
-		}
-	}
-	fmt.Println()
-	p = sortList(&l1)
-	for {
-		fmt.Print(p.Val, "->")
-		p = p.Next
-		if p.Next == nil {
-			fmt.Print(p.Val)
-			break
-		}
-	}
+	p = sortListByQuickSort1(&l1)
+	//p = sortListByFastSlowPoint(&l1)
+
+	PrintLinkedList(p)
+
 	fmt.Println()
 
 }
