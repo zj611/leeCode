@@ -74,30 +74,6 @@ func partition(start, end *ListNode) {
 	partition(target.Next, end)
 }
 
-func partition1(start, end *ListNode) {
-	if start == end || start.Next == end {
-		return
-	}
-	base, target := start, start
-
-	for i := start; i != end; i = i.Next {
-		if i.Val < base.Val {
-			target = target.Next
-			i.Val, target.Val = target.Val, i.Val
-		}
-	}
-	base.Val, target.Val = target.Val, base.Val
-	partition1(start, target)
-	partition1(target.Next, end)
-}
-
-func sortListByQuickSort1(head *ListNode) *ListNode {
-	var start, end *ListNode
-	start, end = head, nil
-	partition1(start, end)
-	return start
-}
-
 func TestSortedLinkedList(t *testing.T) {
 
 	l1 := ListNode{
@@ -121,7 +97,7 @@ func TestSortedLinkedList(t *testing.T) {
 	p := &l1
 	PrintLinkedList(p)
 
-	p = sortListByQuickSort1(&l1)
+	p = sortListByQuickSort(&l1)
 	//p = sortListByFastSlowPoint(&l1)
 
 	PrintLinkedList(p)

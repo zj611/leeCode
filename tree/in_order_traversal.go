@@ -53,3 +53,16 @@ func inOrderTraversal(root *TreeNode) (res []int) {
 	inOrder(root)
 	return
 }
+
+//func inorderTraversal(root *TreeNode) []int {
+//	var result []int
+//	inorder(root, &result)
+//	return result
+//}
+//func inorder(root *TreeNode, output *[]int) {
+//	if root != nil {
+//		inorder(root.Left, output)
+//		*output = append(*output, root.Val)
+//		inorder(root.Right, output)
+//	}
+//}

@@ -48,31 +48,33 @@ func TestChanContextClose(t *testing.T) {
 
 func workerTask1(id int, done chan bool, ctx context.Context) {
 	t := rand.Intn(10)
-	fmt.Println(fmt.Sprintf("the %d started! %d", id, t))
+	fmt.Println(fmt.Sprintf("the %d is starting: %d", id, t))
+
 	for i := 0; i < t; i++ {
 		select {
 		case <-ctx.Done():
-			fmt.Println(fmt.Sprintf("the %d stopped!", id))
+			fmt.Println(fmt.Sprintf("the %d is ending", id))
 			return
 		default:
 			time.Sleep(time.Second)
 		}
 	}
 	done <- true
-	fmt.Println(fmt.Sprintf("the %d stopped!", id))
+	fmt.Println(fmt.Sprintf("the %d is ending", id))
+
 }
 
 func TestChanContextClose1(t *testing.T) {
 	ctx, cancel := context.WithCancel(context.Background())
-
 	done := make(chan bool)
 	for i := 0; i < 3; i++ {
-		go workerTask1(i, done, ctx)
+		go func(id int, ch chan bool) {
+			workerTask1(id, ch, ctx)
+		}(i, done)
 	}
+
 	<-done
 	cancel()
-
 	time.Sleep(10 * time.Second)
 	close(done)
-
 }
